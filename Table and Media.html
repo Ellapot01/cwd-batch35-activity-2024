@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Table and Media</title>
+</head>
+<body>
+
+<h1 class="center red-text 
+text-lighten-2">Table</h1>
+<div class="divider"></div>
+<div class="container">
+<br>
+Tables are a nice way to organize a lot of data. We provide a few utility classes to help you style your table as easily as possible. In addition, to improve mobile experience, all tables on mobile-screen widths are centered automatically.
+<table>
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Item Name</th>
+<th>Item Price</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Jurela</td>
+<td>Lay's Chips 170g</td>
+<td>₱150.00</td>
+</tr>
+<tr>
+<td>Randy</td>
+<td>Phone Case</td>
+<td>₱120.85</td>
+</tr>
+<tr>
+<td>Caleb</td>
+<td>Dumbells Set</td>
+<td>₱889.99</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<br>
+<br>
+<h3 class="red-text 
+text-lighten-2">Striped Table</h3>
+<table class="striped">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Item Name</th>
+<th>Item Price</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Jurela</td>
+<td>Lay's Chips 170g</td>
+<td>₱150.00</td>
+</tr>
+<tr>
+<td>Randy</td>
+<td>Phone Case</td>
+<td>₱120.85</td>
+</tr>
+<tr>
+<td>Caleb</td>
+<td>Dumbells Set</td>
+<td>₱889.99</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<br>
+<br>
+<h3 class="red-text 
+text-lighten-2">Highlighted Table</h3>
+<table class="highlight">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Item Name</th>
+<th>Item Price</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Jurela</td>
+<td>Lay's Chips 170g</td>
+<td>₱150.00</td>
+</tr>
+<tr>
+<td>Randy</td>
+<td>Phone Case</td>
+<td>₱120.85</td>
+</tr>
+<tr>
+<td>Caleb</td>
+<td>Dumbells Set</td>
+<td>₱889.99</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<br>
+<br>
+<h3 class="red-text 
+text-lighten-2">Centered Table</h3>
+<table class="centered">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Item Name</th>
+<th>Item Price</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Jurela</td>
+<td>Lay's Chips 170g</td>
+<td>₱150.00</td>
+</tr>
+<tr>
+<td>Randy</td>
+<td>Phone Case</td>
+<td>₱120.85</td>
+</tr>
+<tr>
+<td>Caleb</td>
+<td>Dumbells Set</td>
+<td>₱889.99</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<br>
+<br>
+<h3 class="red-text 
+text-lighten-2">Responsive Table</h3>
+<table class="responsive-table">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Item Name</th>
+<th>Item Price</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Jurela</td>
+<td>Lay's Chips 170g</td>
+<td>₱150.00</td>
+</tr>
+<tr>
+<td>Randy</td>
+<td>Phone Case</td>
+<td>₱120.85</td>
+</tr>
+<tr>
+<td>Caleb</td>
+<td>Dumbells Set</td>
+<td>₱889.99</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+<h1 class="red-text text-lighten-2 center">Media CSS</h1>
+<div class="divider"></div>
+<div class="container" >
+<br>
+<h3 class="red-text text-lighten-2">Images</h3>
+Images can be styled in different ways using Materialize
+<br><br>
+<h4>Responsive Images</h5>
+To make images resize responsively to page width, 
+you can add the class responsive-img to your image tag. 
+It will now have a max-width: 100% and height:auto.
+<br><br>
+<img class="responsive-img" src="aek.avif">
+
+<br><br><h4>Circular Image</h4>
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+<div class="card-panel blue-grey lighten-5 z-depth-1">
+<div class="row valign-wrapper">
+<div class="col s3">
+<img src="iak.avif" class="circle responsive-img"> <!-- notice the "circle" class -->
+</div>
+<div class="col s10">
+This is a square image. Add the "circle" class to it to make it appear circular.
+</div></div></div></div>
+<br><br><br>
+<h3 class="red-text text-lighten-2">Videos</h3>
+We provide a container for Embedded Videos that resizes them responsively.
+<br><br><h4>Responsive Embeds</h4>
+To make your embeds responsive, merely wrap them with a containing div which has the class video-container
+<br><br>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/trVZvNPfAns?si=QAB-0xLbx0Jf1MJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<br>
+<h4>Responsive Videos</h4>
+To make your HTML5 Videos responsive just add the class responsive-video to the video tag.
+<br><br>
+<video class="responsive-video" controls>
+    <source src="stockvideo.mp4" type="video/mp4">
+  </video>
+
+span
+
+  
+  <br><br><br><br><br><br>
+<h1 class="red-text text-lighten-2 center">Media</h1>
+<div class="divider"></div>
+<div class="container" >
+<br>
+Media components include things that have to do with large media objects like Images, Video, Audio, etc.
+<br><br>
+<h3 class="red-text text-lighten-2">Material Box</h3>
+Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key. 
+<br>
+<img class="materialboxed" width="650" src="eak.avif" data-caption="Image Stock from Unsplash"> <br>
+Creating the above image with the effect is as simple as adding a materialboxed class to the image tag.
+<br><br><br>
+<h3 class="red-text text-lighten-2">Sliders</h3>
+Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.
+
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/img1.avif"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="light grey-text text-lighten-3">This is our big Tagline!</h3>
+          <h6 class="light grey-text text-lighten-3">Bunch of flowers on a bench.</h6>
+        </div>
+      </li>
+      <li>
+        <img src="images/im2.avif"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h6 class="light grey-text text-lighten-3">A fine leaf.</h6>
+        </div>
+      </li>
+      <li>
+        <img src="images/img3.avif"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h6 class="light grey-text text-lighten-3">Image of a cat</h6>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="height: 1000px;"></div>
+<!-- Jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>$(document).ready(function(){
+    //Material Box
+    $('.materialboxed').materialbox({
+    inDuration: 1000,
+    outDuration: 1000 });
+    //Slider
+    $('.slider').slider({
+        indicators: false,
+        height: 400,
+        duration: 900,
+        interval: 3000
+  });
+});</script>
+</body>
+</html> 

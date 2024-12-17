@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Materialize Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/34a8502db0.js" crossorigin="anonymous"></script>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Compiled and minified CSS -->  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Navbar & Sidevar</title>
+</head>
+<body>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Test 1</a></li>
+  <li><a href="#!">Test 2</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Test</a></li>
+</ul>
+
+
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" data-target="slide-out" class="sidenav-trigger brand-logo left"><i class="fa-solid fa-bars"></i></a>
+    <div class="container">
+      <a href="#" class="brand-logo"><i class="fa-solid fa-user"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Kit</a></li>
+        <li><a href="badges.html">Icons</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Docs<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ul id="slide-out" class="sidenav">
+  <li><div class="user-view">
+    <div class="background">
+      <img src="images/office.avif" alt="Background">
+    </div>
+    <a href="#user"><img class="circle" src="images/person.avif" alt="User"></a>
+    <a href="#name"><span class="white-text name">Jurela Ayala</span></a>
+    <a href="#email"><span class="white-text email">jbardoquillo@gmail.com</span></a>
+  </div></li>
+  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+  <li><a href="#!">Second Link</a></li>
+  <li><div class="divider"></div></li>
+  <li><a class="subheader">Subheader</a></li>
+  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+</ul>
+
+
+<br><br>
+<h1 class="center red-text 
+text-lighten-2">Navbar</h1>
+<div class="divider"></div>
+<div class="container">
+<br>
+The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.
+<br>
+<h3 class="red-text text-lighten-2">Right Aligned Links</h3>
+To right align your navbar links, just add a
+<span class="code-text">right</span> class to your <span class="code-text">&lt;ul&gt;</span> that contains
+them.
+<br>
+<br>
+<nav class="light-blue">
+<div class="container">
+<div class="nav-wrapper">
+<a href="https://fontawesome.com/"
+class="brand-logo" target="_blank">
+<i class="fa-regular fa-font-awesome"></i></a>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a href="https://fontawesome.com/kits/">Kits</a></li>
+<li><a href="https://fontawesome.com/icons/">Icons</a></li>
+<li><a href="https://docs.fontawesome.com/">Docs</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<br>
+<br>
+<h3 class="red-text text-lighten-2">Left Aligned Links</h3>
+To left align your navbar links, just add a
+<span class="code-text">left</span> class to your <span class="code-text">&lt;ul&gt;</span> that contains
+them.
+<br>
+<br>
+<nav class="pink">
+<div class="container">
+<div class="nav-wrapper">
+<a href="https://instagram.com/"
+class="brand-logo right" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+<ul id="nav-mobile" class="left hide-on-med-and-down">
+<li><a href="https://fontawesome.com/kits/">Kits</a></li>
+<li><a href="https://fontawesome.com/icons/">Icons</a></li>
+<li><a href="https://docs.fontawesome.com/">Docs</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<br>
+<h3 class="red-text text-lighten-2">Centering the logo</h3>
+The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the <span class="code-text">center</span> class to your <span class="code-text">&lt;a class="brand-logo"&gt;</span>. You will have to make sure yourself that links do not overlap if you use this.
+<br>
+<br>
+<nav class="purple darken-4">
+<div class="container">
+<div class="nav-wrapper">
+<a href="https://discord.com/"
+class="brand-logo center" target="_blank">
+<i class="fa-brands fa-discord"></i>
+<ul id="nav-mobile" class="left hide-on-med-and-down">
+<li><a href="https://fontawesome.com/kits/">Kits</a></li>
+<li><a href="https://fontawesome.com/icons/">Icons</a></li>
+<li><a href="https://docs.fontawesome.com/">Docs</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<br>
+<h3 class="red-text text-lighten-2">Active Items</h3>
+Add active class to your li tags to denote the current page.
+<br>
+<br>
+<nav class="black">
+<div class="container">
+<div class="nav-wrapper">
+<a href="https://github.com/"
+class="brand-logo left" target="_blank">
+<i class="fa-brands fa-github"></i>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+<li class="active grey darken-4"><a href="https://fontawesome.com/kits/">Kits</a></li>
+<li><a href="https://fontawesome.com/icons/">Icons</a></li>
+<li><a href="https://docs.fontawesome.com/">Docs</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<br>
+<h3 class="red-text text-lighten-2">Extended Navbar with Tabs</h3>
+To add extended components to the navbar, add the class <span class="code-text">nav-extended</span> to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.
+<br>
+<br>
+<nav class="grey lighten-1 nav-extended">
+<div class="container">
+<div class="nav-wrapper">
+<a href="https://unsplash.com/"
+class="brand-logo left" target="_blank">
+<i class="fa-brands fa-unsplash"></i>
+</a>
+<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a href="https://fontawesome.com/kits/">Kits</a></li>
+<li><a href="https://fontawesome.com/icons/">Icons</a></li>
+<li><a href="https://docs.fontawesome.com/">Docs</a></li>
+</ul>
+</div>
+<div class="nav-content">
+  <ul class="tabs tabs-transparent">
+    <li class="tab"><a href="#test1">Test 1</a></li>
+    <li class="tab"><a href="#test2">Test 2</a></li>
+    <li class="tab"><a href="#test4">Test 3</a></li>
+  </ul>
+</div>
+</nav>
+
+<!-- Tab Structure -->
+ <!-- TEST 1 -->
+<div class="row">
+<div id="test1" class="col s12">
+<div class="card">
+<div class="card-image">
+<img src="images/test1.avif" alt="" class="responsive-img">
+</div>
+</div>
+</div>
+</div>
+<!-- TEST2 -->
+<div class="row">
+    <div id="test2" class="col s12">
+    <div class="card">
+    <div class="card-image">
+    <img src="images/test2.avif" alt="" class="responsive-img">
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- TEST 4 -->
+<div class="row">
+    <div id="test4" class="col s12">
+    <div class="card">
+    <div class="card-image">
+    <img src="images/test4.avif" alt="" class="responsive-img">
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <h3 class="red-text text-lighten-2">Fixed Navbar</h3>
+    To make the navbar fixed, you have to add an outer wrapping div with the class <span class="code-text">navbar-fixed</span> . This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.
+    <br><br>
+    <h3 class="red-text text-lighten-2">Navbar Dropdown Menu</h3>
+    To add a navbar dropdown menu, add the <span class="code-text">ul</span> dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the <span class="code-text">data-target</span> attribute of the dropdown trigger.
+
+
+
+</div>
+<div style="height: 1000px;"></div>
+<!-- Materialize JS and Dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>S
+<!-- Jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });</script>
+<script>$(".dropdown-trigger").dropdown();</script>
+<script>$(document).ready(function(){
+    $('.tabs').tabs();
+  });</script>
+</body>
+</html> 
