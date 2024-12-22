@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Builder - Customize Your Ride</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- MaterializeCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .brand-logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+        nav {
+            background: linear-gradient(45deg, #00796b, #004d40);
+        }
+        footer {
+            background: #004d40;
+            padding: 20px 0;
+        }
+        .custom-btn {
+            background: linear-gradient(45deg, #00796b, #004d40);
+        }
+        .custom-btn:hover {
+            background: linear-gradient(45deg, #004d40, #00796b);
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .input-field label {
+            color: #00796b;
+        }
+
+        .option-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .option {
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px;
+            text-align: center;
+            border: 2px solid #004d40;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .option:hover {
+            transform: scale(1.05);
+            border-color: #00796b;
+        }
+        .option img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .option.selected {
+            border-color: #00796b;
+            background-color: #e0f2f1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="blue darken-3">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Bike Builder</a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="builder.html">Bike Builder</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidenav for Mobile -->
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="builder.html" class="active">Bike Builder</a></li>
+        <li><a href="about-section">About</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+    </ul>
+
+    <!-- Bike Builder Section -->
+    <div class="section container">
+        <h2 class="center-align">Customize Your Bike</h2>
+        <p class="center-align">Choose every detail to make your dream bike come to life.</p>
+        <form id="bike-builder-form">
+            <!-- Frame Selection -->
+            <div class="section">
+                <h5>Step 1: Choose Your Frame</h5>
+                <div class="option-container">
+                    <div class="option" data-value="aluminum">
+                        <img src="images/aluminum-frame.jpg" alt="Aluminum Frame">
+                        <p>Aluminum</p>
+                    </div>
+                    <div class="option" data-value="carbon">
+                        <img src="images/carbon-frame.jpg" alt="Carbon Frame">
+                        <p>Carbon</p>
+                    </div>
+                    <div class="option" data-value="steel">
+                        <img src="images/steel-frame.jpg" alt="Steel Frame">
+                        <p>Steel</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Handlebar Selection -->
+            <div class="section">
+                <h5>Step 2: Choose Your Handlebar</h5>
+                <div class="option-container">
+                    <div class="option" data-value="drop">
+                        <img src="images/drop-bar.jpg" alt="Drop Bar">
+                        <p>Drop Bar</p>
+                    </div>
+                    <div class="option" data-value="flat">
+                        <img src="images/flat-bar.jpg" alt="Flat Bar">
+                        <p>Flat Bar</p>
+                    </div>
+                    <div class="option" data-value="riser">
+                        <img src="images/riser-bar.jpg" alt="Riser Bar">
+                        <p>Riser Bar</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="row center-align">
+                <button type="submit" class="btn-large custom-btn">Build My Bike</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="blue darken-3 white-text center-align">
+        <p>&copy; 2024 Bike Builder. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidenav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenav);
+
+            const options = document.querySelectorAll('.option');
+            options.forEach(option => {
+                option.addEventListener('click', () => {
+                    options.forEach(opt => opt.classList.remove('selected'));
+                    option.classList.add('selected');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

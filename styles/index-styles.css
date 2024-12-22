@@ -1,0 +1,821 @@
+nav {
+    background: linear-gradient(45deg, #000000, #c4a700, #6b5b00); /* Keep the original gradient background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: #fff; /* Optional: set a background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+    body {
+        margin-top: 64px; /* Adjust this value to match the height of your navbar */
+    }
+    
+
+  /* Navbar Hover Effect */
+  nav:hover {
+    background: linear-gradient(45deg, #000000, #c4a700, #6b5b00); /* Reverse gradient on hover */
+  }
+  
+  /* Navbar Brand Logo */
+  .brand-logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out; /* Logo scaling effect */
+  }
+  
+  .brand-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+  }
+  
+  /* Navbar Links */
+  nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease; /* Link color change and transform */
+  }
+  
+  nav ul li a:hover {
+    color: #ff6f00;  /* Change color on hover */
+    transform: translateY(-5px); /* Slightly lift the link */
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 10px 15px; /* Adjust to fit the navbar height */
+    margin: 0;
+    line-height: normal; /* Ensure the text vertically aligns */
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Optional hover effect */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center; /* Ensures proper vertical alignment */
+    height: 60px; /* Adjust to match your navbar's height */
+  }
+  
+  
+/* Sidenav Trigger Button */
+.sidenav-trigger {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the Sidenav Trigger */
+.sidenav-trigger:hover {
+    transform: rotate(90deg); /* Rotate the hamburger icon on hover */
+    color: #ff6f00; /* Change color of the icon */
+}
+
+/* Mobile Menu Styling */
+@media only screen and (max-width: 768px) {
+    .sidenav-trigger {
+        font-size: 28px; /* Larger icon for mobile */
+    }
+
+
+
+    /* Align navigation items in a column */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Styling for navigation links */
+    nav ul li a {
+        font-size: 20px;
+        padding: 15px;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+    }
+
+    /* Hover effects for links in mobile menu */
+    nav ul li a:hover {
+        background-color: #e3c100; /* Green hover background */
+        transform: scale(1.05); /* Slightly enlarge the links */
+    }
+}
+
+/* Smooth Scrolling Effect for the Page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mobile Menu Styling */
+@media only screen and (max-width: 768px) {
+    .sidenav-trigger {
+        font-size: 28px; /* Larger icon for mobile */
+    }
+
+    /* Ensure navbar background color stays consistent */
+    nav {
+        background: linear-gradient(45deg, #000000, #c4a700, #6b5b00); /* Maintain the same gradient */
+    }
+
+    /* Other mobile-specific styles */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 15px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: #e3c100;
+        transform: scale(1.05);
+    }
+}
+
+/* Slide in effect for open sidenav */
+.sidenav.open {
+    transform: translateX(0); /* Slide in from the left */
+}
+
+/* Sidenav Links */
+.sidenav ul li a {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+}
+
+/* Hover effect on links inside the sidenav */
+.sidenav ul li a:hover {
+    background-color: #e3c100; /* Green color on hover */
+    transform: translateX(10px); /* Slight rightward move for the links */
+}
+
+/* Additional Hover Effect for Sidenav Links */
+.sidenav ul li a:hover i {
+    transform: scale(1.2); /* Slight enlargement of icons on hover */
+}
+
+/* Optional: Sidenav icon transition */
+.sidenav ul li a i {
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for icons */
+}
+
+.hero {
+  margin-top: -64px;
+}
+body {
+padding-top: 64px; 
+margin: 0; 
+}
+
+/* Hero Title and Description Styling */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Hero Button Styling */
+.hero-btn {
+    background-color: #006a93;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-out;
+    position: relative;
+}
+
+/* Hero Button Hover Effect */
+.hero-btn:hover {
+    background-color: #e3c100;
+    transform: scale(1.1) rotate(3deg); /* Slight zoom and rotate effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increased shadow for emphasis */
+}
+
+/* Hero Button Icon */
+.hero-btn i {
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth icon movement */
+}
+
+/* Hover Icon Animation */
+.hero-btn:hover i {
+    transform: translateX(8px); /* Icon moves slightly to the right */
+}
+
+/* Button Focus Effect (optional for accessibility) */
+.hero-btn:focus {
+    outline: none;
+    box-shadow: 0 0 15px #00796b;
+    transform: scale(1.05); /* Slightly increase size on focus */
+}
+
+
+/* Hover Effect for Hero Section */
+.hero:hover {
+    background: linear-gradient(to right, #004d40, #00796b);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-btn {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+}
+/* Mobile Sidenav Styles */
+#mobile-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu li {
+    padding: 16px 20px;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s ease;
+}
+
+#mobile-menu li:hover {
+    background-color: #575757;
+}
+
+#mobile-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+#mobile-menu li a i {
+    margin-right: 15px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+#mobile-menu li a:hover {
+    color: #f1f1f1;
+}
+
+#mobile-menu li a i:hover {
+    transform: scale(1.2);
+}
+
+/* When the menu is open */
+#mobile-menu.open {
+    transform: translateX(0);
+}
+
+/* Transition for the background */
+.sidenav-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: display 0.3s ease;
+}
+
+/* Show background when sidenav is open */
+.sidenav-background.open {
+    display: block;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.section {
+  padding: 60px 20px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 900px;
+}
+
+.section:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #FFD700;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section-title i {
+  color: #FFD700;
+  font-size: 1.5rem;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #636e72;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #636e72;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+
+.contact-list li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-list i {
+  color: #FFD700;
+  font-size: 1.2rem;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #2d3436;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #FFD700;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 15px;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+.contact-form button {
+  padding: 15px 20px;
+  background-color: #FFD700;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #e6c200;
+  transform: scale(1.05);
+}
+
+.gold-icon,.gold-icon1,.gold-icon2,.gold-icon3 {
+  color: #FFD700; /* Gold color */
+}
+
+
+
+/* About Us Section Transitions */
+#about-section h2:hover {
+  transform: scale(1.1);
+}
+
+#about-section div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about-section div {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#about-section p {
+  transition: opacity 0.5s ease;
+}
+
+#about-section:hover p {
+  opacity: 0.9;
+}
+
+
+/* Footer Styles (Updated) */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeIn 1s ease-out;
+  }
+/* Section Header */
+h2.center-align {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #e3c100;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Feature Card Styling */
+.feature-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Slight elevation effect on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Icon Styling */
+.icon {
+    color: #e3c100; /* Consistent green color for icons */
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover .icon {
+    color: #ff6f00; /* Icon color changes on hover */
+}
+
+/* Card Title Styling */
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #e9ba00;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Card Description Styling */
+.card-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #616161;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Card Titles and Description */
+.feature-card:hover .card-title {
+    color: #e3c100; /* Change color on hover */
+}
+
+.feature-card:hover .card-description {
+    color: #333333; /* Darker text on hover */
+}
+
+/* Padding and Spacing Adjustments */
+.row {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .feature-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+  /* Footer Content Layout */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: all 0.3s ease; /* Smooth transition for footer content */
+  }
+  
+  /* Social Media Icons */
+  .social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    color: #4CAF50;
+    transform: scale(1.2); /* Enlarging icons on hover */
+  }
+  
+  .quick-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .quick-links a:hover {
+    color: #4CAF50;
+    transform: scale(1.05); /* Subtle scaling on hover */
+  }
+  
+  /* Button Styling for Newsletter */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Enlarge button on hover */
+  }
+
+
+  
+  /* Lightbox Styling */
+  section.light-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .lightbox img {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .lightbox img:hover {
+    transform: scale(1.02);
+  }
+
+  /**/
+  .cards-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    margin: 0 20px; /* Adding margin to the left and right */
+  }
+  
+  .cards-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Increased gap for more space between cards */
+  }
+  
+  .card1,.card2,.card3 {
+    background-color: #fff;
+    border: 1px solid #ccced2;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* Width is now 80% to give space from the edges */
+    max-width: 400px; /* Card size set to 400px wide */
+    aspect-ratio: 4 / 3; /* Setting aspect ratio to 4:3 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card1:hover,.card2:hover,.card3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card1-header,.card2-header,.card3-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .pfp1,.pfp2,.pfp3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card1 h3  {
+    font-size: 1.4rem;
+    color: #333;
+  }
+    
+  .card2 h3  {
+    font-size: 1.4rem;
+    color: #333;
+  }
+    
+  .card3 h3  {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .quote-icon {
+    font-size: 4rem;
+    color: #bbb;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.3;
+  }
+  
+  .card1 p {
+    font-size: 1rem;
+    color: #555;
+  }
+    
+  .card2 p {
+    font-size: 1rem;
+    color: #555;
+  }
+    
+  .card3 p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 90%; /* Adjusting for smaller screens */
+    }
+  }
+  /* Fade-in Animation for Footer */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+    will-change: opacity, transform;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #00796b, #004d40); /* Teal gradient */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker thumb color on hover */
+}
+
